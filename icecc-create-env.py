@@ -35,10 +35,3 @@ os.makedirs(tarball_dir)
 # Generate tarball.
 
 subprocess.check_output(["icecc-create-env", "--clang", clang_path], cwd=tarball_dir);
-
-# Change name of generated tarball to something well known.
-
-tarball_generated = os.path.join(tarball_dir, os.listdir(tarball_dir)[0])
-tarball_final = os.path.join(tarball_dir, "clang.tar.gz")
-
-os.rename(tarball_generated, tarball_final)

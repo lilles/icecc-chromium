@@ -7,9 +7,9 @@
 cluster when doing a distributed build of chromium. The tarball is created from
 the clang compiler in the chromium checkout.
 
-The generated tarball is stored in src/icecc-tarball/clang.tar.gz, which is
-expected by the icecc-ninja script. Running this scripts deletes the old tarball
-before generating the new one.
+The generated tarball is stored in src/icecc-tarball/, which is expected by the
+icecc-ninja script. Running this scripts deletes the old tarball before
+generating the new one.
 
 To make sure the tarball is up-to-date with the current checkout, add this
 custom hook to the .gclient file:

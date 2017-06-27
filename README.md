@@ -14,6 +14,18 @@
   - Add custom hook to .gclient. See documentation in icecc-create-env.py
   - Run gclient runhooks
 
+Inject the settings in icecc.gni into your build config, either explicitly:
+
+    gn gen out \
+      --args='use_debug_fission=false clang_use_chrome_plugins=false enable_nacl=false linux_use_bundled_binutils=false cc_wrapper="ccache"'
+
+Or by importing the absolute path to icecc.gni from args.gn:
+
+    mkdir -p out
+    dir=$(dirname $(which icecc-ninja))
+    echo "import(\"$dir/icecc.gni\")" > out/args.gn
+    gn gen out
+
 ## Usage
 
 Build with icecc-ninja instead of ninja. For instance:

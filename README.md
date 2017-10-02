@@ -17,7 +17,7 @@
 Inject the settings in icecc.gni into your build config, either explicitly:
 
     gn gen out \
-      --args='use_debug_fission=false clang_use_chrome_plugins=false enable_nacl=false linux_use_bundled_binutils=false cc_wrapper="ccache" ffmpeg_use_atomics_fallback=true'
+      --args='use_debug_fission=false clang_use_chrome_plugins=false enable_nacl=false linux_use_bundled_binutils=false cc_wrapper="ccache" ffmpeg_use_atomics_fallback=true enable_swiftshader=false'
 
 Or by importing the absolute path to icecc.gni from args.gn:
 

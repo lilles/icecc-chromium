@@ -16,4 +16,8 @@ clang_use_chrome_plugins=false
 enable_nacl=false
 linux_use_bundled_binutils=false
 cc_wrapper="ccache"
+
+# The following options avoid a clang #include_next bug:
+# https://bugs.llvm.org/show_bug.cgi?id=26828
 ffmpeg_use_atomics_fallback=true
+enable_swiftshader=false

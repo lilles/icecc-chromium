@@ -21,3 +21,7 @@ cc_wrapper="ccache"
 # https://bugs.llvm.org/show_bug.cgi?id=26828
 ffmpeg_use_atomics_fallback=true
 enable_swiftshader=false
+
+# The following option avoids crashing protoc on startup.
+# See https://crbug.com/772827
+use_lld=false

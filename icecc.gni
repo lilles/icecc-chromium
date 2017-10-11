@@ -19,9 +19,14 @@ cc_wrapper="ccache"
 
 # The following options avoid a clang #include_next bug:
 # https://bugs.llvm.org/show_bug.cgi?id=26828
+# enable_swiftshader=false will crash layout tests. If you don't need to run
+# layout tests, you might consider disabling it. Otherwise you have to build
+# the swiftshader target with ninja instead of icecc-ninja.
+
+#enable_swiftshader=false
 ffmpeg_use_atomics_fallback=true
-enable_swiftshader=false
 
 # The following option avoids crashing protoc on startup.
 # See https://crbug.com/772827
 use_lld=false
+

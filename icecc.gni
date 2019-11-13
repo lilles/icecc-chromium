@@ -24,7 +24,7 @@ cc_wrapper="ccache"
 # the swiftshader target with ninja instead of icecc-ninja.
 
 #enable_swiftshader=false
-ffmpeg_use_atomics_fallback=true
+#ffmpeg_use_atomics_fallback=true
 
 # The following option avoids crashing protoc on startup.
 # See https://crbug.com/772827

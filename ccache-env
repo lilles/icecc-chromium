@@ -4,5 +4,5 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-export CCACHE_SLOPPINESS=time_macros,include_file_mtime,file_macro
+export CCACHE_SLOPPINESS=time_macros,include_file_mtime
 export CCACHE_CPP2=yes
